@@ -1,2 +1,2 @@
 # pdv
-Ponto de Vendas
+SISTEMA DE PONTO DE VENDAS;
