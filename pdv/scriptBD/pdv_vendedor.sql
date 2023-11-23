@@ -16,27 +16,27 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `loja`
+-- Table structure for table `vendedor`
 --
 
-DROP TABLE IF EXISTS `loja`;
+DROP TABLE IF EXISTS `vendedor`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `loja` (
+CREATE TABLE `vendedor` (
   `id` int NOT NULL AUTO_INCREMENT,
-  `nome` varchar(25) DEFAULT NULL,
+  `nome` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `loja`
+-- Dumping data for table `vendedor`
 --
 
-LOCK TABLES `loja` WRITE;
-/*!40000 ALTER TABLE `loja` DISABLE KEYS */;
-INSERT INTO `loja` VALUES (1,'Galpão - Padarias'),(2,'Centauro'),(3,'Nike'),(4,'HugoChots');
-/*!40000 ALTER TABLE `loja` ENABLE KEYS */;
+LOCK TABLES `vendedor` WRITE;
+/*!40000 ALTER TABLE `vendedor` DISABLE KEYS */;
+INSERT INTO `vendedor` VALUES (1,'Lucas Luiz'),(2,'Carlos Eduardo'),(3,'Luciana Souza'),(4,'Hugo costa');
+/*!40000 ALTER TABLE `vendedor` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

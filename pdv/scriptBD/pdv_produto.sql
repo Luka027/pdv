@@ -27,8 +27,9 @@ CREATE TABLE `produto` (
   `nome` varchar(45) NOT NULL,
   `quantidade` int DEFAULT NULL,
   `preco` double NOT NULL,
+  `descricao` varchar(60) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +38,7 @@ CREATE TABLE `produto` (
 
 LOCK TABLES `produto` WRITE;
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
-INSERT INTO `produto` VALUES (1,'TV',10,900);
+INSERT INTO `produto` VALUES (1,'TV',10,900.8,'Tv de 60 polegadas'),(2,'Notebook',6,1200.5,'Notebook i5'),(3,'Smartphone',15,800.3,'Motorola g8'),(4,'Bola',50,25,'Futebol');
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-21 20:56:00
+-- Dump completed on 2023-11-22 21:09:24

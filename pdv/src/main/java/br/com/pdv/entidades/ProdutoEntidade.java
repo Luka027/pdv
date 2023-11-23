@@ -55,6 +55,16 @@ public class ProdutoEntidade implements Serializable{
 	public void setPreco(Double preco) {
 		this.preco = preco;
 	}
+	@Column(name = "descricao")
+	private String descricao;
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
 
 

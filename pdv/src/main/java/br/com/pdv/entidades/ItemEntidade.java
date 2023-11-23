@@ -23,14 +23,32 @@ public class ItemEntidade implements Serializable {
 		this.id = id;
 	}
 	
-	@Column(name = "nome")
-	private String nome;
-	public String getNome() {
-		return nome;
+	@Column(name = "quantidade")
+	private Long quantidade;
+	public Long getQuantidade() {
+		return quantidade;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setQuantidade(Long quantidade) {
+		this.quantidade = quantidade;
 	}
+	@Column(name = "id_produto")
+	private Long id_produto;
+	public Long getId_produto() {
+		return id_produto;
+	}
+	public void setId_produto(Long id_produto) {
+		this.id_produto = id_produto;
+	}
+	@Column(name = "id_venda")
+	private Long id_venda;
+	public Long getId_venda() {
+		return id_venda;
+	}
+	public void setId_venda(Long id_venda) {
+		this.id_venda = id_venda;
+	}
+	
+	
 	
 
 }
